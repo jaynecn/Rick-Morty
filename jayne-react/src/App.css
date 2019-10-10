@@ -20,3 +20,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+.counter-button {
+  border: 3px solid green;
+  background-color: white;
+  color: green;
+  font-size: 18px;
+  padding: 3px 10px;
+  margin: 0px 3px;
+}
+
+.header {
+  color: green;
+}
