@@ -1,3 +1,6 @@
+
+// 2: design types of actions.
+
 // Count
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';

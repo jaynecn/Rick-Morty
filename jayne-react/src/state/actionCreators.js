@@ -12,3 +12,15 @@ export function increment() {
 export function decrement() {
   return { type: types.DECREMENT };
 }
+
+export const getCharacters = () => dispatch => {
+  dispatch({ type: types.SHOW_CHARACTERS });
+  axios.get(characters)
+    .then(res => {
+      console.log(res.data);
+      dispatch({ type: types.SHOW_CHARACTERS, payload: res.data.results });
+    })
+    .catch(err => {
+      console.log('error', err.response);
+    });
+};

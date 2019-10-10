@@ -11,9 +11,9 @@ export function Counter(props) {
       <button className= "counter-button" onClick={increment}>+</button>
       <button className= "counter-button" onClick={decrement}>-</button>
       {
-        count > 0
+        count > 0 || count < 0
         ? <p>nifty!</p>
-        : <p>give it a wee go.</p>
+        : <p>give it a wee go!</p>
       }
     </div>
   )

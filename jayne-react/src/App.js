@@ -40,6 +40,7 @@ a.activeNavButton {
 // 4: One enormous reducer
 const monsterReducer = combineReducers({
   count: reducers.countReducer,
+  state: reducers.characterReducer,
 })
 
 // 5: use 'create store' to create a Redux store
