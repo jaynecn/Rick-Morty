@@ -10,6 +10,11 @@ export function Counter(props) {
       <h3>Count: {count}</h3>
       <button className= "counter-button" onClick={increment}>+</button>
       <button className= "counter-button" onClick={decrement}>-</button>
+      {
+        count > 0
+        ? <p>nifty!</p>
+        : <p>give it a wee go.</p>
+      }
     </div>
   )
 }

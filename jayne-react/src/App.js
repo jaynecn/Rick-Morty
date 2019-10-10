@@ -57,19 +57,18 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Header />
-        <Counter />
-        {/* <NavBar>
-          <li>
-            <NavLink exact to="/" activeClassName="activeNavButton">A Nifty Counter</NavLink>
-          </li>
-          <li>
-            <NavLink to="/characters" activeClassName="activeNavButton">Rick &amp; Morty Characters</NavLink>
-          </li>
-        </NavBar>
-        <Route exact path="/" render={props => <Counter {...props} /> } />
-        <Route exact path="/characters" render={props => <CharacterList {...props} /> } /> */}
-      </div>
+      <Header />
+      <NavBar>
+        <li>
+          <NavLink exact to="/" activeClassName="activeNavButton">But first..</NavLink>
+        </li>
+        <li>
+          <NavLink to="/characters" activeClassName="activeNavButton"> Rick &amp; Morty Characters</NavLink>
+        </li>
+      </NavBar>
+      <Route exact path="/" render={props => <Counter {...props} /> } />
+      <Route exact path="/characters" render={props => <CharacterList {...props} /> } />
+    </div>
     </Provider>
   );
 }
