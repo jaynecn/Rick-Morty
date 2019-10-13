@@ -16,9 +16,10 @@ const initialCharacterState = [];
 export function characterReducer(state = initialCharacterState, action) {
   switch (action.type) {
     case types.SHOW_CHARACTERS:
-      const newState = state.concat(action.payload);
-      newState.shift();
-      return newState;
+      return action.payload;
+      // const newState = state.concat(action.payload);
+      // newState.shift();
+      // return newState;
     default:
       return state;
   }

@@ -14,7 +14,6 @@ export function decrement() {
 }
 
 export const getCharacters = () => dispatch => {
-  dispatch({ type: types.SHOW_CHARACTERS });
   axios.get(characters)
     .then(res => {
       console.log(res.data);
